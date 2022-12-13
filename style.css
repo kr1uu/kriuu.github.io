@@ -1,0 +1,311 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+  background-image: url(blen.png);
+  height: auto;
+}
+#header {
+    position: sticky;
+    z-index: 2;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+#header img{
+    width: 50px;
+    height: 50px;
+    float:left;
+    position:absolute;
+    top:8px;
+    left: 5px;
+}
+#header #nav {
+    position: absolute;
+    right: 0;
+}
+#nav .subnav{
+    position: absolute;
+    display: none;
+    min-width: 20px;
+    background-color:rgb(0, 0, 0) ;
+} 
+#header #nav li {
+    position: relative;
+    display: inline-block;
+    min-width:150px;
+}
+#header #nav >li:hover{
+    background-color: white;
+    cursor: pointer;
+}
+#header #nav >li:hover >a{
+color: black;
+cursor: pointer;
+}
+#header #nav .subnav li:hover a{
+    color: rgb(117, 117, 117);
+    font-size: larger;
+}
+#header #nav li a{
+    color: rgb(255, 255, 255);
+    text-decoration:none ;
+    font-size: larger;
+    line-height: 64px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+#header #nav .subnav{
+    position: absolute;
+    display: none;
+}
+#header #nav li:hover .subnav{
+display:block;
+}
+marquee{
+  background-color: rgba(75, 75, 75, 0.7);
+  color:#ffffff;
+  height: 30px;
+  font-size: 22px;
+}
+.location_header{
+position: absolute;  
+top:65px;
+right: 120px;
+width:1275px;
+z-index: -1;
+}
+/* end header */
+/*title*/
+.new2{
+  color:rgb(255, 255, 255);
+  position:absolute;
+  font-size: larger;
+  top: 730px;
+  left:25%;
+}
+.new3{
+  position:relative;
+  top:750px;
+  left: 50px;
+}
+.til{
+  background-color: rgba(66, 15, 80, 0.46);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+  text-decoration: none;
+  color:white;
+  font-size: 30px;
+  text-shadow: #59fffc;
+}
+a:hover{
+  color:rgb(71, 232, 232);
+}
+p:hover{
+  color:red;
+}
+.news #charecter{
+  display:block;
+  color: white;
+  font-size: 20px;
+  padding: 10px 10px;
+  max-width: 500px;
+  max-height: 1000px;
+  position: relative;
+  background-color: rgb(0, 0, 0,80%);
+  z-index: 10;
+}
+/*begin slider*/
+.location{
+  position: absolute;
+  left:180px;
+  top:140px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+}
+.news{
+  max-width: 700px;
+  max-height: 1500px;
+  position: absolute;
+  right:160px;
+  top:180px;
+  border: 2px solid;
+  z-index: 1;
+  font-family:Calibri;
+}
+.landis{
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+img{
+  width:650px;
+  height:500px;
+  position:relative;
+}
+.ima{
+  width:500px;
+  height:300px;
+  position: relative;
+  z-index: -1;
+}
+.ima2{
+  width: 400px;
+  height:300px;
+  position: relative;
+  z-index: 1;
+}
+.tect{
+  position:absolute;
+  top: 20px;
+  left:430px;
+  max-width: 800px;
+  background-color:black ;
+  height:290px;
+}
+.tect2{
+  position:absolute;
+  top: 320px;
+  left:430px;
+  max-width: 800px;
+  background-color:black ;
+  height:290px;
+}
+.tect3{
+  position:absolute;
+  top: 620px;
+  left:430px;
+  max-width: 800px;
+  background-color:black ;
+  height:290px;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgb(0, 0, 0,50%) ;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.text:hover{
+  color:aqua;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position:absolute;
+  background-color: rgb(0, 0, 0,50%);
+  top:0px;
+  z-index: 1;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+/*end body*/
+/*footer*/
+.lane{
+  max-width: 1100px;
+  text-align: center;
+}  
+.tille{
+  text-align: center;
+  margin-right: 600px;
+  font-size: 35px;
+}
+.bot{
+  position:absolute;
+  top:2000px;
+  width:1800px;
+  height:300px;
+  background-color: black;
+  
+}
+.telect{
+  margin-top: 50px;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0;
+  margin-left: 100px;
+  color:white;
+}
+.ima3{
+  position: absolute;
+  right: 300px;
+  bottom: 0px;
+  width:600px;
+  height: 300px;
+}
+
